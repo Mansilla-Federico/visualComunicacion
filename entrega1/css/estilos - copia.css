@@ -1,0 +1,175 @@
+html{
+    font-size: 62,5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: white;
+    text-align:center;
+    padding: 2rem 0;
+}
+
+nav a{
+    display:inline-block;
+    text-decoration: none;
+    color:rgb(201, 134, 9);
+    margin:0 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size:large;
+}
+
+nav a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.imagenPresentacion{
+    background-image: url(../images/imagenPortada.jpg);
+    height: 63rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 0.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0rem;
+    font-size: 4rem;
+}
+.linea{
+    background: orange;
+    height: 0.5rem;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    width: 95%;
+    margin:auto;
+    grid-gap: 1rem;
+    padding: 4rem 0rem;
+    overflow: hidden;
+}
+
+.galeria > a{
+    display:block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 19rem;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+    filter:blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.imagenesServicios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenesServicios img{
+    width: 30%;
+    height: 25rem;
+    margin: 1rem;
+    box-shadow: 0 0 0 2px rgb(233, 161, 37);
+    flex: auto;
+}
+
+@media screen and (max-width:768px){
+    .imagenesServicios img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .imagenesServicios img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:369px){
+    .imagenesServicios img{
+        width: 95%;
+    }
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+} 
+
+.informacionContacto{
+    width: 30rem;
+    height: 12rem;
+    
+    margin: 6rem 30rem;
+}
+.headerFooter{
+    background-color: orange;
+}
+
+.containerAbout{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.containerRedes{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.wsp{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+.botonwsp{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    z-index: 5;
+}
+
+.links{
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.icon{
+    font-size: 2rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.end{
+    font-size: 1rem;
+    text-align: center;
+}
+

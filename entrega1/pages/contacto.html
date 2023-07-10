@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-whidth,initial-scale=1.0">
-
-        <title>VA Comunicacion Visual</title>
+        <meta name="description" content="aqui podras contactarnos">
+        <meta name="keywords" content="carteles, banner, corporeo, letras, led, vinilos, contacto">
+        
+        <title>te esperamos para que nos contactes - VA Comunicacion Visual</title>
         <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/49cd48f582.js" crossorigin="anonymous"></script>
@@ -13,84 +16,83 @@
 
     <body>
         <header>
-            <a href="../index.html">
-                <img src="../images/logo.jpg" width="150" height="150" alt="Logo">
-            </a>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpg" width="150" height="150" alt="Logo">
+                </a>
+            </div>
             <nav>
-                <a href="../index.html">Home         </a>
-                <a href="servicios.html">Servicios   </a>
-                <a href="nosotros.html">Nosotros     </a>
-                <a href="ubicacion.html">Ubicacion   </a>
-                <a href="contacto.html">Contacto     </a>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="ubicacion.html">UBICACION</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>   
             </nav>
         </header>
+
         <main>
             <span class="linea"></span>
-            <h3>Contactanos</h3>
+                <h1>CONTACTANOS</h1>
             <form action="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
-                </div>
+                <div class="formularioContacto">
+                    <div>
+                        <input class="campos" type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+                    </div>
+                    <div>
+                        <input class="campos" type="email" name="email" id="email" required placeholder="Ingrese su email">
+                    </div>
+                    <div>
+                        <input class="campos" type="number" name="telefono" id="telefono" required placeholder="Ingrese su telefono">
+                    </div> 
+                    <div>
+                        <label for="mensaje"><h4>MENSAJE:</h4></label>
+                        <textarea class="campos" name="mensaje" id="mensaje" cols="30" rows="10">
+                        </textarea>
+                    </div>
+            
+                    <input type="button" value="JavaScript">
 
-                <div>
-                    <label for="email">Correo Electronico:</label>
-                    <br>
-                    <input type="email" name="email" id="email" required placeholder="Ingrese su email">
-                </div>
-
-                <div>
-                    <label for="telefono">Telefono:</label>
-                    <br>
-                    <input type="number" name="telefono" id="telefono" required placeholder="Ingrese su telefono">
-                </div> 
-
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10">
-                    </textarea>
-                </div>
-                <input type="button" value="JavaScript">
-
-                <input type="reset" value="Borrar el formulario">
+                    <input type="reset" value="Borrar el formulario">
                 
-                <input type="submit" value="Enviar el formulario">
+                    <input type="submit" value="Enviar el formulario">
+                </div>
             </form>
-            <section>
-                <article class="informacionContacto">
-                    <h4>Horarios de Atención</h4>
-                        <p>Nuestros días y horarios de atención son de Lunes a Sábados de 09:00 a 20:00 hs. No dudes en consultarnos!</p>
-                    <h4>Nuestro Domicilio</h4>
-                        <P>Coronel Barcala 295</P> 
-                    <h4>Nuestros telefonos</h4>
-                        <p>(011) 4956-0046</p>
-                </article>
-            </section>
+
+            <div class="informacionContacto">
+                <h4>Horarios de Atención</h4>
+                    <p>Nuestros días y horarios de atención son de Lunes a Sábados de 09:00 a 20:00 hs. No dudes en consultarnos!</p>
+                <h4>Nuestro Domicilio</h4>
+                    <P>Coronel Barcala 295</P> 
+                <h4>Nuestros telefonos</h4>
+                    <p>(011) 4956-0046</p>
+            </div>
                 
         </main>
         <footer class="headerFooter">
             <div class="container">
                 <div class="containerAbout">
                     <h2>Acerca de nosotros</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, nostrum ad tenetur, reprehenderit quasi quidem consequatur provident voluptas quibusdam officiis, vitae id odit et optio minima ut ducimus hic!</p>
+                    <p>Somos una compañía enfocada en ayudar a los propietarios de pequeñas y grandes empresas a crear materiales de mercadeo personalizados, modernos y con diseño profesional, ofreciendo una gran variedad de los productos que necesitan para mostrarse profesionales, y mejor su rentabilidad.</p>
                 </div>
                 <div class="containerRedes">
-                   <h2>Redes sociales</h2>
-                   <div class="containerRedesSocial">
+                            <p>Redes sociales</p>
                         <a class="links" href="#"><i class="fa-brands fa-facebook icon"></i>Facebook</a>
                         <a class="links" href="#"><i class="fa-brands fa-instagram icon"></i>Instagram</a>
-                   </div>
                 </div>
                 <div class="wsp">
                     <a href="https://wa.me/5491173674008" target="blank"><img class="botonwsp" src="../images/wsp.webp" alt="whatsapp"></a>
                 </div>
             </div>
-            <hr>
-            <div class="end">
-                <p>Copyright 2023 New Imagen <br>
-                Todos los derechos reservados</p>
+        <hr>
+            <div>
+                <span class="end">
+                    Copyright 2023 New Imagen 
+                </span>
+                <span class="end">
+                    Todos los derechos reservados
+                </span>
             </div>    
         </footer>
     </body>
